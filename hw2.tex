@@ -35,11 +35,29 @@
 \setcounter{enumi}{9}
 \item \begin{enumerate}[a.]
       % 1.4 #10.a
-      \item
+      \item {
+            \newcommand{\z}{-i}
+            \newcommand{\a}{-\pi}
+            \newcommand{\b}{\pi}
+            \newcommand{\I}{(\a, \b]}
+
+            % example use of commands in this namespace:
+            % \arg_{\I} \z
+            }
       % 1.4 #10.b
-      \item
+      \item {
+            \newcommand{\z}{-i}
+            \newcommand{\a}{0}
+            \newcommand{\b}{2\pi}
+            \newcommand{\I}{[\a, \b)}
+            }
       % 1.4 #10.c
-      \item
+      \item {
+            \newcommand{\z}{1}
+            \newcommand{\a}{\frac{3\pi}{2}}
+            \newcommand{\b}{\frac{7\pi}{2}}
+            \newcommand{\I}{[\a, \b)}
+            }
       \end{enumerate}
 
 % 1.4 #11
